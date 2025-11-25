@@ -197,14 +197,14 @@ a {
   justify-content: center;
   flex-direction: column;
   gap: 6px;
-  padding: 6px 10px;
+  padding: 0;
   cursor: pointer;
   transition: background 0.2s ease, border 0.2s ease;
 }
 
 .nav-toggle span {
   display: block;
-  width: 100%;
+  width: 60%;
   height: 2px;
   background: var(--text);
   border-radius: 999px;
