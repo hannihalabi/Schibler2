@@ -101,17 +101,9 @@ const applyTheme = theme => {
   }
 };
 
-const storedTheme = localStorage.getItem("schibler-theme");
-if (storedTheme) {
-  applyTheme(storedTheme);
-} else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
-  applyTheme("light");
-}
-
 themeToggle?.addEventListener("click", () => {
   const nextTheme = themeToggle.dataset.theme === "light" ? "dark" : "light";
   applyTheme(nextTheme);
-  localStorage.setItem("schibler-theme", nextTheme);
 });
 
 const heroVideo = document.querySelector(".hero-video");
