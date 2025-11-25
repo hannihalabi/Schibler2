@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schibler Electric | Elektriker Stockholm & Uppsala</title>
+  <title data-i18n="meta.title">Schibler Electric | Elektriker Stockholm &amp; Uppsala</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,17 +16,25 @@
       <img class="logo-img" src="Logo-Shibler-Electric-alt-light-01.svg" alt="Schibler Electric">
     </div>
     <nav class="nav-links">
-      <a href="#tjanster">Tjänster</a>
-      <a href="#fordelar">Fördelar</a>
-      <a href="#jour">Jour 24/7</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="#tjanster" data-i18n="nav.services">Tjänster</a>
+      <a href="#fordelar" data-i18n="nav.benefits">Fördelar</a>
+      <a href="#jour" data-i18n="nav.emergency">Jour 24/7</a>
+      <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
     </nav>
     <div class="nav-cta">
-      <a class="ghost-btn" href="tel:+46850702700">08 50 70 2700</a>
-      <a class="primary-btn" href="#kontakt">Boka en elektriker</a>
+      <a class="ghost-btn" href="tel:+46850702700" data-i18n="nav.phone">08 50 70 2700</a>
+      <a class="primary-btn" href="#kontakt" data-i18n="nav.book">Boka en elektriker</a>
     </div>
-    <button class="theme-toggle" aria-label="Byt tema" data-theme="dark">🌇</button>
-    <button class="nav-toggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="mobile-menu">
+    <div class="lang-toggle" role="group" aria-label="Språk" data-i18n="lang.group" data-i18n-target="aria-label">
+      <button type="button" class="lang-btn active" data-lang="sv" data-i18n="lang.sv-label" data-i18n-target="aria-label" aria-label="Visa svenska">
+        🇸🇪
+      </button>
+      <button type="button" class="lang-btn" data-lang="en" data-i18n="lang.en-label" data-i18n-target="aria-label" aria-label="Visa engelska">
+        🇬🇧
+      </button>
+    </div>
+    <button class="theme-toggle" aria-label="Byt tema" data-i18n="nav.theme" data-i18n-target="aria-label" data-theme="dark">🌇</button>
+    <button class="nav-toggle" aria-label="Öppna meny" data-i18n="nav.open" data-i18n-target="aria-label" aria-expanded="false" aria-controls="mobile-menu">
       <span></span>
       <span></span>
       <span></span>
@@ -39,17 +47,17 @@
         <div class="logo">
           <img class="logo-img" src="Logo-Shibler-Electric-alt-light-01.svg" alt="Schibler Electric">
         </div>
-        <button class="nav-close" aria-label="Stäng meny">×</button>
+        <button class="nav-close" aria-label="Stäng meny" data-i18n="nav.close" data-i18n-target="aria-label">×</button>
       </div>
       <nav class="mobile-links">
-        <a href="#tjanster">Tjänster</a>
-        <a href="#fordelar">Fördelar</a>
-        <a href="#jour">Jour 24/7</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#tjanster" data-i18n="nav.services">Tjänster</a>
+        <a href="#fordelar" data-i18n="nav.benefits">Fördelar</a>
+        <a href="#jour" data-i18n="nav.emergency">Jour 24/7</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
       </nav>
       <div class="mobile-cta">
-        <a class="primary-btn full" href="#kontakt">Boka en elektriker</a>
-        <a class="ghost-btn full" href="tel:+46850702700">Ring 08 50 70 2700</a>
+        <a class="primary-btn full" href="#kontakt" data-i18n="nav.book">Boka en elektriker</a>
+        <a class="ghost-btn full" href="tel:+46850702700" data-i18n="mobile.call">Ring 08 50 70 2700</a>
       </div>
     </div>
   </div>
@@ -60,21 +68,21 @@
       <div class="aurora aurora-1"></div>
       <div class="aurora aurora-2"></div>
       <div class="hero-content">
-        <span class="pill-tag">STOCKHOLM &amp; UPPSALA</span>
-        <h1>Din Fullservicepartner inom El</h1>
+        <span class="pill-tag" data-i18n="hero.tagline">STOCKHOLM &amp; UPPSALA</span>
+        <h1 data-i18n="hero.title">Din Servicepartner inom El</h1>
         <div class="lead-rotator">
-          <p class="lead lead-cycle">
+          <p class="lead lead-cycle" data-i18n="hero.lead1">
             Söker du efter en pålitlig elektriker i Stockholm? Vi är ett etablerat elbolag som stolt erbjuder fullservice
             för alla dina elbehov i Stockholm och Uppsala.
           </p>
-          <p class="lead lead-cycle lead-cycle-delay">
+          <p class="lead lead-cycle lead-cycle-delay" data-i18n="hero.lead2">
             Med endast certifierade och erfarna elektriker kan vi garantera högkvalitativt arbete där säkerhet och
             noggrannhet alltid är i fokus.
           </p>
         </div>
         <div class="cta-row">
-          <a class="primary-btn" href="#kontakt">Begär offert</a>
-          <a class="ghost-btn" href="#partners">Samarbeten</a>
+          <a class="primary-btn" href="#kontakt" data-i18n="hero.cta.primary">Begär offert</a>
+          <a class="ghost-btn" href="#partners" data-i18n="hero.cta.secondary">Samarbeten</a>
         </div>
       </div>
       <div class="hero-panel glass" data-reveal>
@@ -84,20 +92,24 @@
           <span class="dot dot-gray"></span>
         </div>
         <div class="panel-body">
-          <p class="panel-label">Trygga installationer</p>
-          <p class="panel-title">Smarta hem, elcentraler och laddboxar som bara funkar.</p>
+          <p class="panel-label" data-i18n="hero.panel.label">Trygga installationer</p>
+          <p class="panel-title" data-i18n="hero.panel.title">Smarta hem, elcentraler och laddboxar som bara funkar.</p>
           <div class="panel-grid">
             <div>
               <p class="panel-metric">24/7</p>
-              <p class="panel-caption">Jour</p>
+              <p class="panel-caption" data-i18n="hero.panel.metric1">Jour</p>
             </div>
             <div>
               <p class="panel-metric">100%</p>
-              <p class="panel-caption">Certifierat team</p>
+              <p class="panel-caption" data-i18n="hero.panel.metric2">Certifierat team</p>
             </div>
             <div>
-              <p class="panel-metric">Stockholm</p>
-              <p class="panel-caption">och Uppsala</p>
+              <p class="panel-metric" data-i18n="hero.panel.metric3">Svar</p>
+              <p class="panel-caption" data-i18n="hero.panel.metric3caption">Inom 15 min</p>
+            </div>
+            <div>
+              <p class="panel-metric" data-i18n="hero.panel.metric4">Alltid</p>
+              <p class="panel-caption" data-i18n="hero.panel.metric4caption">Certifierade</p>
             </div>
           </div>
         </div>
@@ -105,7 +117,7 @@
     </section>
     <div id="hero-panel-placeholder"></div>
 
-    <section class="section logo-loop" aria-label="Betalningslogotyper">
+    <section class="section logo-loop" aria-label="Betalningslogotyper" data-i18n="logoLoop.label" data-i18n-target="aria-label">
       <div class="logo-loop-track">
         <div class="logo-loop-row">
           <img src="betalningar/mastercard-1.svg" alt="Mastercard">
@@ -130,14 +142,14 @@
 
     <section class="section" id="tjanster">
       <div class="section-header">
-        <p class="eyebrow">Tjänster</p>
-        <h2>Våra tjänster i Stockholm &amp; Uppsala</h2>
+        <p class="eyebrow" data-i18n="services.eyebrow">Tjänster</p>
+        <h2 data-i18n="services.title">Våra tjänster i Stockholm &amp; Uppsala</h2>
         <div class="section-rotator">
-          <p class="section-lead lead-cycle">
+          <p class="section-lead lead-cycle" data-i18n="services.lead1">
             Letar du efter en pålitlig elektriker för ditt kommande projekt? Oavsett om det är för en nyinstallation,
             en renovering eller för att byta ut din elcentral, så är vi här för att hjälpa dig.
           </p>
-          <p class="section-lead lead-cycle lead-cycle-delay">
+          <p class="section-lead lead-cycle lead-cycle-delay" data-i18n="services.lead2">
             Behöver du assistans med att installera belysning eller byta ut gamla vägguttag? Vi levererar resultat
             oavsett uppgiftens omfattning.
           </p>
@@ -146,72 +158,72 @@
       <div class="service-grid">
         <article class="service-card glass" data-reveal>
           <div class="icon">⚡</div>
-          <h3>Felsökning</h3>
-          <p>Snabb analys och åtgärd av elproblem i hem och företag.</p>
+          <h3 data-i18n="services.items.troubleshooting.title">Felsökning</h3>
+          <p data-i18n="services.items.troubleshooting.body">Snabb analys och åtgärd av elproblem i hem och företag.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">🛠️</div>
-          <h3>Elinstallation</h3>
-          <p>Säkra installationer vid nybyggnation, renovering eller uppgraderingar.</p>
+          <h3 data-i18n="services.items.installation.title">Elinstallation</h3>
+          <p data-i18n="services.items.installation.body">Säkra installationer vid nybyggnation, renovering eller uppgraderingar.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">♻️</div>
-          <h3>Underhåll</h3>
-          <p>Planerat underhåll och uppdatering av befintliga anläggningar.</p>
+          <h3 data-i18n="services.items.maintenance.title">Underhåll</h3>
+          <p data-i18n="services.items.maintenance.body">Planerat underhåll och uppdatering av befintliga anläggningar.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">🚗</div>
-          <h3>Laddboxar</h3>
-          <p>Installation av laddbox för elbil med komplett dokumentation.</p>
+          <h3 data-i18n="services.items.ev.title">Laddboxar</h3>
+          <p data-i18n="services.items.ev.body">Installation av laddbox för elbil med komplett dokumentation.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">🧲</div>
-          <h3>Elcentral</h3>
-          <p>Byte till modern el-central med säkra säkringslösningar.</p>
+          <h3 data-i18n="services.items.panel.title">Elcentral</h3>
+          <p data-i18n="services.items.panel.body">Byte till modern el-central med säkra säkringslösningar.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">☀️</div>
-          <h3>Solceller</h3>
-          <p>Dimensionering och installation av solpaneler och växelriktare.</p>
+          <h3 data-i18n="services.items.solar.title">Solceller</h3>
+          <p data-i18n="services.items.solar.body">Dimensionering och installation av solpaneler och växelriktare.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">💡</div>
-          <h3>Belysning</h3>
-          <p>Effektfull belysning inne och ute – från design till driftsättning.</p>
+          <h3 data-i18n="services.items.lighting.title">Belysning</h3>
+          <p data-i18n="services.items.lighting.body">Effektfull belysning inne och ute – från design till driftsättning.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">🛡️</div>
-          <h3>Säkerhet &amp; övervakning</h3>
-          <p>Övervakning, brand- och passagesystem med full dokumentation.</p>
+          <h3 data-i18n="services.items.security.title">Säkerhet &amp; övervakning</h3>
+          <p data-i18n="services.items.security.body">Övervakning, brand- och passagesystem med full dokumentation.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">🔐</div>
-          <h3>Inpasseringssystem</h3>
-          <p>Smart åtkomstkontroll för fastigheter och lokaler.</p>
+          <h3 data-i18n="services.items.access.title">Inpasseringssystem</h3>
+          <p data-i18n="services.items.access.body">Smart åtkomstkontroll för fastigheter och lokaler.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">🏠</div>
-          <h3>Hemautomation</h3>
-          <p>Styr belysning, värme och trygghet med smarta hem-lösningar.</p>
+          <h3 data-i18n="services.items.homeauto.title">Hemautomation</h3>
+          <p data-i18n="services.items.homeauto.body">Styr belysning, värme och trygghet med smarta hem-lösningar.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">🌐</div>
-          <h3>Fiber och data</h3>
-          <p>Snabb, stabil anslutning med dragning och terminering av fiber och nätverk.</p>
+          <h3 data-i18n="services.items.fiber.title">Fiber och data</h3>
+          <p data-i18n="services.items.fiber.body">Snabb, stabil anslutning med dragning och terminering av fiber och nätverk.</p>
         </article>
         <article class="service-card glass" data-reveal>
           <div class="icon">🤝</div>
-          <h3>BRF &amp; företag</h3>
-          <p>Helhetsavtal och driftstöd för bostadsrättsföreningar och kommersiella miljöer.</p>
+          <h3 data-i18n="services.items.partners.title">BRF &amp; företag</h3>
+          <p data-i18n="services.items.partners.body">Helhetsavtal och driftstöd för bostadsrättsföreningar och kommersiella miljöer.</p>
         </article>
       </div>
     </section>
 
     <section class="section cert-loop" aria-label="Certifieringar">
       <div class="section-header">
-        <p class="eyebrow">Certifierade partners</p>
-        <h2>Vårt arbete backas av ledande certifieringar</h2>
-        <p class="section-lead">Vi kvalitetssäkrar installationerna tillsammans med branschorganisationer och tillsynsmyndigheter.</p>
+        <p class="eyebrow" data-i18n="certs.eyebrow">Certifierade partners</p>
+        <h2 data-i18n="certs.title">Vårt arbete backas av ledande certifieringar</h2>
+        <p class="section-lead" data-i18n="certs.lead">Vi kvalitetssäkrar installationerna tillsammans med branschorganisationer och tillsynsmyndigheter.</p>
       </div>
       <div class="cert-loop-track" aria-hidden="true">
         <div class="cert-loop-row">
@@ -232,26 +244,26 @@
     <section class="section highlight" id="jour">
       <div class="highlight-inner glass">
         <div>
-          <p class="eyebrow">EL-Jour 24/7</p>
-          <h2>Vi står alltid till hands för att hjälpa våra kunder</h2>
-          <p>Allvarligt strömavbrott eller akuta fel? Ring oss direkt så säkrar vi din anläggning.</p>
+          <p class="eyebrow" data-i18n="jour.eyebrow">EL-Jour 24/7</p>
+          <h2 data-i18n="jour.title">Vi står alltid till hands för att hjälpa våra kunder</h2>
+          <p data-i18n="jour.lead">Allvarligt strömavbrott eller akuta fel? Ring oss direkt så säkrar vi din anläggning.</p>
           <div class="cta-row">
-            <a class="primary-btn" href="tel:+46850702700">Ring akut</a>
-            <a class="ghost-btn" href="#kontakt">Kontakt</a>
+            <a class="primary-btn" href="tel:+46850702700" data-i18n="jour.cta.primary">Ring akut</a>
+            <a class="ghost-btn" href="#kontakt" data-i18n="jour.cta.secondary">Kontakt</a>
           </div>
         </div>
         <div class="stats">
           <div class="stat glass" data-reveal>
             <p class="panel-metric">15 min</p>
-            <p class="panel-caption">Snabb återkoppling</p>
+            <p class="panel-caption" data-i18n="jour.stat1">Snabb återkoppling</p>
           </div>
           <div class="stat glass" data-reveal>
             <p class="panel-metric">24/7</p>
-            <p class="panel-caption">Akut support</p>
+            <p class="panel-caption" data-i18n="jour.stat2">Akut support</p>
           </div>
           <div class="stat glass" data-reveal>
-            <p class="panel-metric">Elsäkerhet</p>
-            <p class="panel-caption">Alltid i fokus</p>
+            <p class="panel-metric" data-i18n="jour.stat3">Elsäkerhet</p>
+            <p class="panel-caption" data-i18n="jour.stat3caption">Alltid i fokus</p>
           </div>
         </div>
       </div>
@@ -259,50 +271,50 @@
 
     <section class="section two-col" id="fordelar">
       <div class="text">
-        <p class="eyebrow">Fördelar</p>
-        <h2>När du väljer att anlita en elektriker i Stockholm &amp; Uppsala genom oss får du tillgång till en rad fördelar</h2>
+        <p class="eyebrow" data-i18n="benefits.eyebrow">Fördelar</p>
+        <h2 data-i18n="benefits.title">När du väljer att anlita en elektriker i Stockholm &amp; Uppsala genom oss får du tillgång till en rad fördelar</h2>
         <div class="benefits">
           <div class="benefit glass" data-reveal>
-            <h4>Professionell Expertis</h4>
-            <p>Vårt team består av certifierade elektriker med gedigen erfarenhet och utbildning. Vi garanterar professionellt utfört arbete som möter höga standarder.</p>
+            <h4 data-i18n="benefits.items.expertise.title">Professionell Expertis</h4>
+            <p data-i18n="benefits.items.expertise.body">Vårt team består av certifierade elektriker med gedigen erfarenhet och utbildning. Vi garanterar professionellt utfört arbete som möter höga standarder.</p>
           </div>
           <div class="benefit glass" data-reveal>
-            <h4>Säkerhet och Trygghet</h4>
-            <p>Vi prioriterar säkerheten för både dig och ditt projekt. Arbetet utförs på ett säkert och korrekt sätt.</p>
+            <h4 data-i18n="benefits.items.safety.title">Säkerhet och Trygghet</h4>
+            <p data-i18n="benefits.items.safety.body">Vi prioriterar säkerheten för både dig och ditt projekt. Arbetet utförs på ett säkert och korrekt sätt.</p>
           </div>
           <div class="benefit glass" data-reveal>
-            <h4>Skräddarsydda Lösningar</h4>
-            <p>Vi lyssnar på dina behov för att erbjuda el-lösningar som passar din situation och budget.</p>
+            <h4 data-i18n="benefits.items.tailored.title">Skräddarsydda Lösningar</h4>
+            <p data-i18n="benefits.items.tailored.body">Vi lyssnar på dina behov för att erbjuda el-lösningar som passar din situation och budget.</p>
           </div>
           <div class="benefit glass" data-reveal>
-            <h4>Flexibla betalningsalternativ</h4>
-            <p>Enkel och smidig betalning genom Swish, kort, delbetalning eller faktura.</p>
+            <h4 data-i18n="benefits.items.payment.title">Flexibla betalningsalternativ</h4>
+            <p data-i18n="benefits.items.payment.body">Enkel och smidig betalning genom Swish, kort, delbetalning eller faktura.</p>
           </div>
           <div class="benefit glass" data-reveal>
-            <h4>Erfarenhet och kompetens</h4>
-            <p>Vi hanterar allt från mindre elreparationer till större projekt med samma noggrannhet.</p>
+            <h4 data-i18n="benefits.items.experience.title">Erfarenhet och kompetens</h4>
+            <p data-i18n="benefits.items.experience.body">Vi hanterar allt från mindre elreparationer till större projekt med samma noggrannhet.</p>
           </div>
         </div>
       </div>
       <div class="side-card glass" data-reveal>
-        <p class="eyebrow">Allt inom el</p>
-        <h3>Allt inom el-installation i Stockholm &amp; Uppsala</h3>
-        <p>Vi hjälper oavsett storlek, vare sig du är privatperson, BRF eller företag. Allt från att byta el-uttag och strömbrytare till att dra om elen i hela huset eller anläggningen. Arbetet sker alltid tryggt och säkert med dig i fokus.</p>
+        <p class="eyebrow" data-i18n="sidecard.eyebrow">Allt inom el</p>
+        <h3 data-i18n="sidecard.title">Allt inom el-installation i Stockholm &amp; Uppsala</h3>
+        <p data-i18n="sidecard.body">Vi hjälper oavsett storlek, vare sig du är privatperson, BRF eller företag. Allt från att byta el-uttag och strömbrytare till att dra om elen i hela huset eller anläggningen. Arbetet sker alltid tryggt och säkert med dig i fokus.</p>
         <div class="chips">
-          <span class="chip">BRF &amp; nyproduktion</span>
-          <span class="chip">Smart belysning</span>
-          <span class="chip">Fiber &amp; data</span>
-          <span class="chip">Elcentral</span>
-          <span class="chip">Solceller</span>
+          <span class="chip" data-i18n="sidecard.chips.brf">BRF &amp; nyproduktion</span>
+          <span class="chip" data-i18n="sidecard.chips.smart">Smart belysning</span>
+          <span class="chip" data-i18n="sidecard.chips.fiber">Fiber &amp; data</span>
+          <span class="chip" data-i18n="sidecard.chips.panel">Elcentral</span>
+          <span class="chip" data-i18n="sidecard.chips.solar">Solceller</span>
         </div>
         <div class="payments glass">
-          <p class="eyebrow">Enkla och säkra betalningar</p>
+          <p class="eyebrow" data-i18n="sidecard.payments.title">Enkla och säkra betalningar</p>
           <div class="payment-badges">
-            <span>Swish</span>
-            <span>Kort</span>
-            <span>Klarna</span>
-            <span>Delbetalning</span>
-            <span>Faktura</span>
+            <span data-i18n="sidecard.payments.swish">Swish</span>
+            <span data-i18n="sidecard.payments.card">Kort</span>
+            <span data-i18n="sidecard.payments.klarna">Klarna</span>
+            <span data-i18n="sidecard.payments.installment">Delbetalning</span>
+            <span data-i18n="sidecard.payments.invoice">Faktura</span>
           </div>
         </div>
       </div>
@@ -310,34 +322,34 @@
 
     <section class="section grid-cta">
       <div class="grid-cta-card glass" data-reveal>
-        <p class="eyebrow">Guiden</p>
-        <h3>Så hittar du rätt elektriker</h3>
+        <p class="eyebrow" data-i18n="guide.eyebrow">Guiden</p>
+        <h3 data-i18n="guide.title">Så hittar du rätt elektriker</h3>
         <ul class="tick-list">
-          <li>Kontrollera att elföretaget är registrerat hos Elsäkerhetsverket.</li>
-          <li>Säkerställ att elföretaget faktiskt får utföra de arbeten du behöver hjälp med.</li>
-          <li>Be om tydlig offert och tidslinje – vi levererar båda.</li>
+          <li data-i18n="guide.tip1">Kontrollera att elföretaget är registrerat hos Elsäkerhetsverket.</li>
+          <li data-i18n="guide.tip2">Säkerställ att elföretaget faktiskt får utföra de arbeten du behöver hjälp med.</li>
+          <li data-i18n="guide.tip3">Be om tydlig offert och tidslinje – vi levererar båda.</li>
         </ul>
       </div>
       <div class="grid-cta-card glass" data-reveal>
-        <p class="eyebrow">Process</p>
-        <h3>Vår väg till en trygg installation</h3>
+        <p class="eyebrow" data-i18n="process.eyebrow">Process</p>
+        <h3 data-i18n="process.title">Vår väg till en trygg installation</h3>
         <div class="timeline">
           <div class="dot"></div>
           <div class="step">
-            <p class="step-title">1. Behov &amp; rådgivning</p>
-            <p>Vi tar in förutsättningar och mål – digitalt eller på plats.</p>
+            <p class="step-title" data-i18n="process.step1.title">1. Behov &amp; rådgivning</p>
+            <p data-i18n="process.step1.body">Vi tar in förutsättningar och mål – digitalt eller på plats.</p>
           </div>
           <div class="step">
-            <p class="step-title">2. Design &amp; offert</p>
-            <p>Du får en skräddarsydd lösning med kostnadsfri offert.</p>
+            <p class="step-title" data-i18n="process.step2.title">2. Design &amp; offert</p>
+            <p data-i18n="process.step2.body">Du får en skräddarsydd lösning med kostnadsfri offert.</p>
           </div>
           <div class="step">
-            <p class="step-title">3. Installation</p>
-            <p>Behöriga elektriker installerar med full dokumentation.</p>
+            <p class="step-title" data-i18n="process.step3.title">3. Installation</p>
+            <p data-i18n="process.step3.body">Behöriga elektriker installerar med full dokumentation.</p>
           </div>
           <div class="step">
-            <p class="step-title">4. Överlämning</p>
-            <p>Genomgång, egenkontroll och support när du behöver den.</p>
+            <p class="step-title" data-i18n="process.step4.title">4. Överlämning</p>
+            <p data-i18n="process.step4.body">Genomgång, egenkontroll och support när du behöver den.</p>
           </div>
         </div>
       </div>
@@ -345,50 +357,50 @@
 
     <section class="section contact" id="kontakt">
       <div class="contact-card glass" data-reveal>
-        <p class="eyebrow">Kontakt</p>
-        <h2>Behövs hjälp? Ring vårt supportteam dygnet runt</h2>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+        <h2 data-i18n="contact.title">Behövs hjälp? Ring vårt supportteam dygnet runt</h2>
         <div class="contact-grid">
           <div>
-            <p class="label">Jour</p>
+            <p class="label" data-i18n="contact.jour.label">Jour</p>
             <a class="contact-link" href="tel:+46850702700">08 50 70 2700</a>
-            <p>Jour 24/7</p>
+            <p data-i18n="contact.jour.caption">Jour 24/7</p>
           </div>
           <div>
-            <p class="label">E-post</p>
+            <p class="label" data-i18n="contact.email.label">E-post</p>
             <a class="contact-link" href="mailto:info@schiblerelectric.se">info@schiblerelectric.se</a>
           </div>
           <div>
-            <p class="label">Adress</p>
-            <p>Datavägen 5<br>175 43 Järfälla</p>
-            <p>Mån–fre 08:00–15:00</p>
+            <p class="label" data-i18n="contact.address.label">Adress</p>
+            <p data-i18n="contact.address.street" data-i18n-target="html">Datavägen 5<br>175 43 Järfälla</p>
+            <p data-i18n="contact.address.hours">Mån–fre 08:00–15:00</p>
           </div>
         </div>
         <div class="cta-row">
-          <a class="primary-btn" href="mailto:info@schiblerelectric.se?subject=Offertförfrågan">Maila</a>
-          <a class="ghost-btn" href="tel:+46850702700">Ring direkt</a>
+          <a class="primary-btn" href="mailto:info@schiblerelectric.se?subject=Offertförfrågan" data-i18n="contact.cta.mail">Maila</a>
+          <a class="ghost-btn" href="tel:+46850702700" data-i18n="contact.cta.call">Ring direkt</a>
         </div>
       </div>
       <div class="contact-form glass" data-reveal>
-        <p class="eyebrow">Snabb offert</p>
+        <p class="eyebrow" data-i18n="contact.form.title">Snabb offert</p>
         <form id="quote-form">
-          <label for="name">Namn</label>
-          <input id="name" name="name" type="text" required placeholder="Ditt namn">
-          <label for="email">E-post</label>
-          <input id="email" name="email" type="email" required placeholder="din@epost.se">
-          <label for="service">Vilken tjänst gäller det?</label>
+          <label for="name" data-i18n="contact.form.name">Namn</label>
+          <input id="name" name="name" type="text" required placeholder="Ditt namn" data-i18n="contact.form.namePlaceholder" data-i18n-target="placeholder">
+          <label for="email" data-i18n="contact.form.email">E-post</label>
+          <input id="email" name="email" type="email" required placeholder="din@epost.se" data-i18n="contact.form.emailPlaceholder" data-i18n-target="placeholder">
+          <label for="service" data-i18n="contact.form.service">Vilken tjänst gäller det?</label>
           <select id="service" name="service" required>
-            <option value="">Välj alternativ</option>
-            <option>Felsökning</option>
-            <option>Elinstallation</option>
-            <option>Laddbox</option>
-            <option>Solceller</option>
-            <option>Elcentral</option>
-            <option>Annat</option>
+            <option value="" data-i18n="contact.form.options.default">Välj alternativ</option>
+            <option data-i18n="contact.form.options.troubleshooting">Felsökning</option>
+            <option data-i18n="contact.form.options.installation">Elinstallation</option>
+            <option data-i18n="contact.form.options.ev">Laddbox</option>
+            <option data-i18n="contact.form.options.solar">Solceller</option>
+            <option data-i18n="contact.form.options.panel">Elcentral</option>
+            <option data-i18n="contact.form.options.other">Annat</option>
           </select>
-          <label for="message">Beskriv behovet</label>
-          <textarea id="message" name="message" rows="4" placeholder="Kort beskrivning..."></textarea>
-          <button type="submit" class="primary-btn full">Skicka</button>
-          <p class="form-note">Vi återkopplar inom 15 minuter under jour och samma vardag för övriga ärenden.</p>
+          <label for="message" data-i18n="contact.form.message">Beskriv behovet</label>
+          <textarea id="message" name="message" rows="4" placeholder="Kort beskrivning..." data-i18n="contact.form.messagePlaceholder" data-i18n-target="placeholder"></textarea>
+          <button type="submit" class="primary-btn full" data-i18n="contact.form.submit">Skicka</button>
+          <p class="form-note" data-i18n="contact.form.note">Vi återkopplar inom 15 minuter under jour och samma vardag för övriga ärenden.</p>
         </form>
       </div>
     </section>
@@ -397,22 +409,22 @@
   <footer class="footer">
     <div class="footer-inner">
       <div>
-        <h4>Schibler Electric</h4>
-        <p>Pålitlig fullservicepartner inom el i Stockholm och Uppsala.</p>
+        <h4 data-i18n="footer.heading">Schibler Electric</h4>
+        <p data-i18n="footer.body">Pålitlig fullservicepartner inom el i Stockholm och Uppsala.</p>
       </div>
       <div class="footer-links">
-        <a href="#top">Start</a>
-        <a href="#tjanster">Tjänster</a>
-        <a href="#fordelar">Fördelar</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#top" data-i18n="footer.start">Start</a>
+        <a href="#tjanster" data-i18n="nav.services">Tjänster</a>
+        <a href="#fordelar" data-i18n="nav.benefits">Fördelar</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
       </div>
       <div class="footer-meta">
-        <p>© 2025 Schibler Electric AB. Alla rättigheter förbehållna.</p>
+        <p data-i18n="footer.copy">© 2025 Schibler Electric AB. Alla rättigheter förbehållna.</p>
       </div>
     </div>
   </footer>
 
-  <a class="mobile-call" href="tel:+46850702700" aria-label="Ring Schibler Electric">
+  <a class="mobile-call" href="tel:+46850702700" aria-label="Ring Schibler Electric" data-i18n="mobile.call.aria" data-i18n-target="aria-label">
     <span class="call-icon" aria-hidden="true">📞</span>
   </a>
 

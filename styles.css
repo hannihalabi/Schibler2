@@ -157,6 +157,35 @@ a {
   gap: 10px;
 }
 
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  width: 46px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-size: 22px;
+}
+
+.lang-btn.active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.light .lang-btn.active {
+  background: rgba(15, 27, 47, 0.1);
+}
+
 .nav-toggle {
   display: none;
   width: 44px;
@@ -1080,8 +1109,8 @@ textarea {
 
 @media (max-width: 1024px) {
   .nav {
-    flex-wrap: wrap;
-    gap: 12px;
+    flex-wrap: nowrap;
+    gap: 10px;
   }
 
   .nav-links {
@@ -1117,7 +1146,7 @@ textarea {
 
   .nav-toggle {
     display: inline-flex;
-    margin-left: 10px;
+    margin-left: 8px;
   }
 
   .nav-links {
@@ -1131,7 +1160,7 @@ textarea {
     justify-content: space-between;
   }
 
-  .theme-toggle {
+  .lang-toggle {
     margin-left: auto;
   }
 
