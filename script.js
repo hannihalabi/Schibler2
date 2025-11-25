@@ -87,7 +87,7 @@ const translations = {
     "mobile.call": "Ring 08 50 70 2700",
     "mobile.call.aria": "Ring Schibler Electric",
     "hero.tagline": "STOCKHOLM & UPPSALA",
-    "hero.title": "Din Fullservicepartner inom El",
+    "hero.title": "Din Servicepartner inom El",
     "hero.lead1":
       "Söker du efter en pålitlig elektriker i Stockholm? Vi är ett etablerat elbolag som stolt erbjuder fullservice för alla dina elbehov i Stockholm och Uppsala.",
     "hero.lead2":
